@@ -31,7 +31,6 @@ export class ViewblogComponent implements OnInit , AfterViewInit{
 
   ngAfterViewInit() {
     this.dataSource.paginator = this.paginator;
-    console.log(this.dataSource);
     this.dataSource.sort = this.sort;
   }
 
@@ -39,10 +38,7 @@ export class ViewblogComponent implements OnInit , AfterViewInit{
     this.blogs = this.blogService.getBlogsList();
     this.dataSource= new MatTableDataSource(this.blogs);
     this.dataSource.paginator = this.paginator;
-    console.log(this.sort);
-
     setTimeout(() => {
-      console.log(this.sort) //not undefined
       this.dataSource.sort = this.sort; 
     })
   }
