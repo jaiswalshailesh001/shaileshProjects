@@ -1,0 +1,17 @@
+
+
+<div class="wrapper">
+<h1>{{actionType}}</h1>
+
+ 
+  <mat-form-field class="example-full-width">
+    <mat-label>write from heart !!</mat-label>
+    <textarea matInput placeholder="Write here..."  [(ngModel)]="blog.Content"></textarea>
+  </mat-form-field>
+
+<div >
+    <button mat-raised-button color="primary" routerLink="/blogs/view" >Cancel</button>
+    <button mat-raised-button color="primary" (click)="save()" >Save</button>
+</div>
+
+</div>
