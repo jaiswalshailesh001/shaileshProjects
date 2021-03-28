@@ -13,7 +13,6 @@ import { AuthService } from '../services/auth.service';
 export class LoginComponent implements OnInit {
   login:Login;
   loginInvalid=false;
-  util
   savedCredential :Login;
   constructor(private utilityService :UtilityService ,
      public auth:AuthService,

@@ -9,18 +9,18 @@
     <table mat-table [dataSource]="dataSource" matSort>
 
         <!-- ID Column -->
-        <ng-container matColumnDef="id">
+        <ng-container matColumnDef="Id">
             <th mat-header-cell *matHeaderCellDef mat-sort-header> ID </th>
             <td mat-cell *matCellDef="let row"> {{row.Id}} </td>
         </ng-container>
 
         <!-- content Column -->
-        <ng-container matColumnDef="content">
+        <ng-container matColumnDef="Content">
             <th mat-header-cell *matHeaderCellDef mat-sort-header> Content </th>
             <td mat-cell *matCellDef="let row"> {{row.Content}}</td>
         </ng-container>
         <!-- date Column -->
-        <ng-container matColumnDef="date">
+        <ng-container matColumnDef="LastModifiedDate">
             <th mat-header-cell *matHeaderCellDef mat-sort-header> Last Modified Date </th>
             <td mat-cell *matCellDef="let row"> {{row.LastModifiedDate | date :'short'}}</td>
         </ng-container>

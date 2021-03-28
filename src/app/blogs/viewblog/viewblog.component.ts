@@ -12,7 +12,7 @@ import { Router } from '@angular/router';
 export class ViewblogComponent implements OnInit , AfterViewInit{
 
   blogs: Array<Blog> = [];
-  displayedColumns: string[] = ['id', 'content','date' ,'action'];
+  displayedColumns: string[] = ['Id', 'Content','LastModifiedDate' ,'action'];
   dataSource: MatTableDataSource<Blog> = new MatTableDataSource();
   defaultPageSize = 10;
   pagelength = 1;
